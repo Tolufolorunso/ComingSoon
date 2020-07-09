@@ -3,6 +3,9 @@ const day = document.querySelector("#days");
 const hrs = document.querySelector("#hour");
 const min = document.querySelector("#min");
 const sec = document.querySelector("#sec");
+const getYear = document.querySelector("#get-year");
+
+getYear.textContent = new Date().getUTCFullYear();
 
 const timeOut = setInterval(() => {
   const countdownDate = new Date("oct 12 2020 12:00:00").getTime();
@@ -53,4 +56,3 @@ menu.addEventListener("click", function (e) {
 });
 
 //
-floor;
